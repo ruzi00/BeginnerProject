@@ -74,12 +74,10 @@ public class rokokActivity extends AppCompatActivity {
         int temp = r.getCheckedRadioButtonId();
         RadioButton rb = (RadioButton) findViewById(temp);
         String geto = rb.getText().toString();
-        Log.w("Word", "here ->" + geto);
         return geto.equals("Bungkus");
     }
 
     public int clc1(int num) {
-        Log.w("Word1", "here ->" + getBatang());
         if (getBatang())
             return num * uang * isi;
         else

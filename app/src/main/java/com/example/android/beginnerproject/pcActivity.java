@@ -71,14 +71,12 @@ public class pcActivity extends AppCompatActivity {
     public int getComputer() {
         txt = (EditText) findViewById(R.id.cpu);
         String value = txt.getText().toString();
-        Log.w("Word21", value);
         return Integer.parseInt(value);
     }
 
     public int getMonitor() {
         txt = (EditText) findViewById(R.id.monitor);
         String value = txt.getText().toString();
-        Log.w("Word2", value);
         return Integer.parseInt(value);
 
     }
