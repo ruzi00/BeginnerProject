@@ -109,7 +109,7 @@
                 android:textColor="@color/primary_dark_color" />
 
             <EditText
-                android:id="@+id/cpu"
+                android:id="@+id/watt"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"

@@ -71,12 +71,21 @@ public class pcActivity extends AppCompatActivity {
     public int getComputer() {
         txt = (EditText) findViewById(R.id.cpu);
         String value = txt.getText().toString();
+        if (value.isEmpty() || value.length() == 0 || value.equals("") || value == null) {
+            Toast.makeText(this, "cpu kosong", Toast.LENGTH_SHORT).show();
+            return 0;
+        }
         return Integer.parseInt(value);
     }
 
     public int getMonitor() {
         txt = (EditText) findViewById(R.id.monitor);
         String value = txt.getText().toString();
+        if (value.isEmpty() || value.length() == 0 || value.equals("") || value == null) {
+            Toast.makeText(this, "monitor kosong", Toast.LENGTH_SHORT).show();
+            return 0;
+        }
+
         return Integer.parseInt(value);
 
     }

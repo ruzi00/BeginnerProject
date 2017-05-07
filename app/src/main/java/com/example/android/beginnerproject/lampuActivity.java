@@ -94,19 +94,34 @@ public class lampuActivity extends AppCompatActivity {
     }
 
 
+    public int getLamp() {
+        txt = (EditText) findViewById(R.id.watt);
+        String value = txt.getText().toString().trim();
+        if (value.isEmpty() || value.length() == 0 || value.equals("") || value == null) {
+            Toast.makeText(this, "intesitas kosong", Toast.LENGTH_SHORT).show();
+            return 0;
+        }
+
+        return Integer.parseInt(value);
+
+    }
+
     public double clc1(int num, int num1) {
-        return num * num1 * uang;
+        return num * num1 * getLamp() * uang;
     }
 
     public double clc2(int num, int num1) {
-        return num * num1 * uang * 30;
+        return num * num1 * getLamp() * uang * 30;
     }
 
     public double clc3(int num, int num1) {
-        return num * num1 * uang * 355;
+        return num * num1 * getLamp() * uang * 355;
     }
 
     public void calculate(View view) {
+
+        txt = (EditText) findViewById(R.id.watt);
+
 
         e = (TextView) findViewById(R.id.money);
         e1 = (TextView) findViewById(R.id.money1);
