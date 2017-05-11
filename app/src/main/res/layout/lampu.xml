@@ -200,5 +200,13 @@
             android:onClick="calculate"
             android:text="@string/calculate" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya listik per Watt sebesar \nRp. 1.46728, \ndikalikan dengan jumlah lampu dan lama lampu menyala dapat menentukan jumlah yang biaya yang dibutuhkan sebagai pengeluaran"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
     </LinearLayout>
 </ScrollView>
+

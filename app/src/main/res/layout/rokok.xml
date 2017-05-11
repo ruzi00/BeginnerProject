@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:padding="2dp">
+        android:padding="2dp"
+        android:weightSum="1">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -152,6 +153,14 @@
             android:layout_height="wrap_content"
             android:onClick="calculate"
             android:text="@string/calculate" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="42.13"
+            android:text="Biaya Rokok Perbatang sebesar Rp. 1,120\nSedangkan tiap bungkus memiliki 16 batang rokok. Sehingga jika dalam sehari menhabiskan 1 bungkus, berarti Biaya yang dibutuhkan sebesar Rp. 17,920. Bayangkan bila dengan angka yang berbeda. Sehingga Stoplah merokok agar dapat menabung untuk masa depan"
+            android:textAlignment="center"
+            android:textSize="18sp" />
 
     </LinearLayout>
 </ScrollView>

@@ -9,26 +9,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
-    android:orientation="vertical"
-    tools:context="com.example.android.beginnerproject.MainActivity">
+        android:orientation="vertical"
+        tools:context="com.example.android.beginnerproject.MainActivity">
 
-    <TextView
-        android:id="@+id/rokok"
-        style="@style/CategoryStyle"
-        android:background="@color/category_rokok"
-        android:text="@string/rokok" />
 
-    <TextView
-        android:id="@+id/lampu"
-        style="@style/CategoryStyle"
-        android:background="@color/category_lampu"
-        android:text="@string/lampu" />
+        <TextView
+            android:id="@+id/rokok"
+            style="@style/CategoryStyle"
+            android:background="@color/category_rokok"
+            android:text="@string/rokok" />
 
-    <TextView
-        android:id="@+id/pc"
-        style="@style/CategoryStyle"
-        android:background="@color/category_PC"
-        android:text="@string/pc" />
+        <TextView
+            android:id="@+id/lampu"
+            style="@style/CategoryStyle"
+            android:background="@color/category_lampu"
+            android:text="@string/lampu" />
+
+        <TextView
+            android:id="@+id/pc"
+            style="@style/CategoryStyle"
+            android:background="@color/category_PC"
+            android:text="@string/pc" />
 
         <TextView
             android:id="@+id/age"

@@ -85,7 +85,21 @@
         android:layout_height="wrap_content"
         android:layout_weight="8"
 
-        android:textAppearance="?android:textAppearanceLarge" />
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/rumus4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Rumus yang Digunakan\n>Selisih Tahun ini dengan Tahun Lahir\n>Selisih Bulan ini dengan Bulan Lahir\n>Selisih Tanggal dengan Tanggal Lahir\n\nSISANYA HANYA PERUBAHAN KONVERSI NORMAL"
+        android:textAppearance="?android:textAppearanceMedium" />
 
     <View
         android:layout_width="match_parent"

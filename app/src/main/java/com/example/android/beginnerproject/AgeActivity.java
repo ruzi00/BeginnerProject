@@ -165,12 +165,13 @@ public class AgeActivity extends AppCompatActivity implements AdapterView.OnItem
             } else {
                 dm--;
                 t--;
-                y = Math.floor(t / 12);
+                y = Math.floor(dm / 12);
                 m = dm % 12;
+                m++;
                 int gety = (int) y;
                 int getz = (int) m;
                 SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy");
-                String dat1 = "" + pickDate + "/" + (getz + 1) + "/" + gety;
+                String dat1 = "" + pickDate + "/" + (getz) + "/" + gety;
                 String dat2 = "" + thisDate + "/" + thisMonth + "/" + thisYear;
 //                String dat1 = "10/10/2013";
 //                String dat2 = "12/12/2014";
@@ -183,7 +184,7 @@ public class AgeActivity extends AppCompatActivity implements AdapterView.OnItem
                     sec = diff / 1000 % 60;
                     min = diff / (60 * 1000) % 60;
                     hour = diff / (60 * 60 * 1000) % 24;
-                    d = diff / (24 * 60 * 60 * 1000);
+                    d = diff / (24 * 60 * 60 * 1000) % 30;
                     d = Math.abs(d);
                     int s = 0;
                     Log.w("Ta", "" + d);
@@ -224,12 +225,12 @@ public class AgeActivity extends AppCompatActivity implements AdapterView.OnItem
 
             TextView tex = (TextView) findViewById(detail);
             String de = "Umur anda \n" + y + " Tahun " + m + " Bulan " + d + " Hari\n";
-            de += "Bisa juga " + m1 + " Bulan " + d1 + " Hari\n";
-            de += "Mungkin " + dd + "Hari\n";
-            de += "Atau " + NumberFormat.getInstance().format(hour) + " Jam\n";
-            de += "Maybe " + NumberFormat.getInstance().format(min) + " Menit\n";
-            de += "Bisa jadi " + NumberFormat.getInstance().format(sec) + " Detik\n";
-            de += "Berbuat Baiklah dengan sesama";
+            de += "Bisa juga \n" + m1 + " Bulan " + d1 + " Hari\n";
+            de += "Mungkin \n" + dd + "Hari\n";
+            de += "Atau \n" + NumberFormat.getInstance().format(hour) + " Jam\n";
+            de += "Maybe \n" + NumberFormat.getInstance().format(min) + " Menit\n";
+            de += "Bisa jadi \n" + NumberFormat.getInstance().format(sec) + " Detik\n";
+            de += "Sudahkan anda Menabung";
             tex.setText(de);
         }
 
