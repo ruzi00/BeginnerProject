@@ -1,17 +1,14 @@
 package com.example.android.beginnerproject;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.NumberFormat;
-import java.util.Locale;
 
 public class rokokActivity extends AppCompatActivity {
 
@@ -93,9 +90,9 @@ public class rokokActivity extends AppCompatActivity {
 
     public int clc3(int num) {
         if (getBatang())
-            return num * uang * 355 * isi;
+            return num * uang * 365 * isi;
         else
-            return num * uang * 355;
+            return num * uang * 365;
     }
 
     public void calculate(View view) {

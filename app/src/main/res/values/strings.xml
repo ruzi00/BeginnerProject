@@ -3,7 +3,9 @@
     <string name="rokok">Rokok</string>
     <string name="lampu">Lampu</string>
     <string name="pc">PC</string>
-    <string name="lost">Kehilangan :</string>
+    <string name="number">Angka</string>
+    <string name="age">Umur</string>
+    <string name="lost">Membutuhkan :</string>
     <string name="money">Rp. <xliff:g example="10000" id="price">%s</xliff:g> /hari</string>
     <string name="money1">Rp. <xliff:g example="100000" id="price">%s</xliff:g> /bulan</string>
     <string name="money2">Rp. <xliff:g example="1000000" id="price">%s</xliff:g> /tahun</string>

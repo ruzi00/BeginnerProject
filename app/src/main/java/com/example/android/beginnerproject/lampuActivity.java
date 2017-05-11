@@ -1,8 +1,7 @@
 package com.example.android.beginnerproject;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -115,7 +114,7 @@ public class lampuActivity extends AppCompatActivity {
     }
 
     public double clc3(int num, int num1) {
-        return num * num1 * getLamp() * uang * 355;
+        return num * num1 * getLamp() * uang * 365;
     }
 
     public void calculate(View view) {

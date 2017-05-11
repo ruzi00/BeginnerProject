@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/tan_background"
+    android:background="@color/tan_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
     android:orientation="vertical"
     tools:context="com.example.android.beginnerproject.MainActivity">
 
@@ -25,5 +30,17 @@
         android:background="@color/category_PC"
         android:text="@string/pc" />
 
+        <TextView
+            android:id="@+id/age"
+            style="@style/CategoryStyle"
+            android:background="@color/category_age"
+            android:text="@string/age" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/number"
+            style="@style/CategoryStyle"
+            android:background="@color/category_number"
+            android:text="@string/number" />
+
+    </LinearLayout>
+</ScrollView>

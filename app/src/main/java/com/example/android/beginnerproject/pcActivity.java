@@ -1,12 +1,9 @@
 package com.example.android.beginnerproject;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -100,7 +97,7 @@ public class pcActivity extends AppCompatActivity {
     }
 
     public double clc3(int num) {
-        return num * (getComputer() + getMonitor()) * uang * 355;
+        return num * (getComputer() + getMonitor()) * uang * 365;
     }
 
     public void calculate(View view) {

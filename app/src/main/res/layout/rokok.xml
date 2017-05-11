@@ -144,9 +144,10 @@
 
         </LinearLayout>
 
-        <Button
-
+        <com.rey.material.widget.Button
             android:id="@+id/button"
+
+            style="@style/Material.Drawable.Ripple.Wave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="calculate"
